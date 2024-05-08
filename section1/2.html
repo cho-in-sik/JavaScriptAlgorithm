@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        let answer;
+        const arr = [a, b, c];
+        const maxNum = Math.max(...arr);
+        const filterdArr = arr.filter((item) => item !== maxNum);
+        if (filterdArr[0] + filterdArr[1] > maxNum) {
+          answer = 'YES';
+        } else {
+          answer = 'NO';
+        }
+
+        return answer;
+      }
+
+      console.log(solution(6, 7, 11));
+    </script>
+  </body>
+</html>
