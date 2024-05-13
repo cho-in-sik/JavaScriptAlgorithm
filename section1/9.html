@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        const splitedStr = s.split('');
+        console.log(splitedStr);
+        let answer = [];
+        splitedStr.forEach((element) => {
+          if (element === 'A') {
+            answer.push('#');
+          } else {
+            answer.push(element);
+          }
+        });
+        const an = answer.join('');
+        return an;
+      }
+
+      let str = 'BANANA';
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
+
+<!-- <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = s;
+        answer = answer.replace(/A/g, '#');
+        return answer;
+      }
+
+      let str = 'BANANA';
+      console.log(solution(str));
+    </script>
+  </body>
+</html> -->
