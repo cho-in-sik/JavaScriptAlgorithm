@@ -5,7 +5,21 @@
   </head>
   <body>
     <script>
-      function solution(arr) {}
+      function solution(arr) {
+        // 1 은 맞은 문제
+        // 0 은 틀린 문제
+        let answer = 0;
+        let cnt = 0;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === 1) {
+            cnt++;
+            answer += cnt;
+          } else {
+            cnt = 0;
+          }
+        }
+        return answer;
+      }
 
       let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0];
       console.log(solution(arr));
